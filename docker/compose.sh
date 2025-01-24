@@ -8,7 +8,8 @@ cleanup_started=false
 
 # Clean up hanging volumes when the script is terminated.
 cleanup() {
-    if [ "$cleanup_started" = true ]; then
+    if [ "$cleanup_started" = true ];
+    then
         exit 0
     fi
     cleanup_started=true
